@@ -1,7 +1,9 @@
-s = input()
-rev = ""
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        cleaned = ""
 
-for ch in s:
-    rev = ch + rev
+        for ch in s:
+            if ch.isalnum():
+                cleaned += ch.lower()
 
-print("Palindrome" if s == rev else "Not Palindrome")
+        return cleaned == cleaned[::-1]
