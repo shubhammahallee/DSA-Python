@@ -19,3 +19,21 @@ class Calculator:
             return "Cannot divide by zero"
         return a / b
 
+class InterestCalculator(Calculator):
+
+    def __init__(self, company, model, price):
+        super().__init__(company, model, price)  # inheritance 
+
+    def interest(self, amount, rate, time):
+        # Simple Interest Formula
+        si = (amount * rate * time) / 100
+        return si
+
+
+# Object creation
+obj1 = Calculator('citizen','fz001',1500)
+obj2 = InterestCalculator('casio', 'fx05s', 1200)
+
+print(obj2.interest(1000, 8, 2))  
+print(obj2.add(8, 2))
+print(obj1.mul(8, 2))
