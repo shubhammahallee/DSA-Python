@@ -10,3 +10,12 @@ def two_sum(nums, target):
             return [seen[target - n], i]
         seen[n] = i
     return []
+
+# 3. Find duplicates
+def find_duplicates(lst):
+    seen, dupes = set(), set()
+    for x in lst:
+        if x in seen:
+            dupes.add(x)
+        seen.add(x)
+    return list(dupes)
