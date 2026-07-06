@@ -1,3 +1,12 @@
 # 1. Palindrome check
 def is_palindrome(s):
     return s == s[::-1]
+
+# 2. Two Sum
+def two_sum(nums, target):
+    seen = {}
+    for i, n in enumerate(nums):
+        if target - n in seen:
+            return [seen[target - n], i]
+        seen[n] = i
+    return []
