@@ -29,3 +29,9 @@ def word_freq(sentence):
         freq[w] = freq.get(w, 0) + 1
     return freq
 
+# 5. Reverse string without slicing
+def reverse_str(s):
+    result = ""
+    for ch in s:
+        result = ch + result
+    return result
