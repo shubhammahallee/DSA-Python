@@ -19,3 +19,13 @@ def find_duplicates(lst):
             dupes.add(x)
         seen.add(x)
     return list(dupes)
+
+
+# 4. Word frequency
+def word_freq(sentence):
+    words = sentence.split()
+    freq = {}
+    for w in words:
+        freq[w] = freq.get(w, 0) + 1
+    return freq
+
