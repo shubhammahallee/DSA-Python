@@ -5,7 +5,7 @@ class Vehicle(ABC):
 
     @abstractmethod
     def start(self):
-        pass
+        pass 
 
     @abstractmethod
     def stop(self):
