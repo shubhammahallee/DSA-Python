@@ -37,9 +37,6 @@ car.start()
 car.stop()
 
 
-
-
-
 bike = Bike()
 bike.start()
 bike.stop()
