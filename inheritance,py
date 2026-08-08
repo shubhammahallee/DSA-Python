@@ -13,7 +13,6 @@ class AdminStaff(Employee):
     def __init__(self,role):
         self.role = role
 
-
 t1 = Teacher("Science")
 
 t1.change_time("5pm")
